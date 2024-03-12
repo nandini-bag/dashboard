@@ -1,11 +1,9 @@
 import React from 'react';
 import {MdOutlineCategory} from "react-icons/md";
-// import { MdClose, MdOutlineSettings, MdOutlineDashboardCustomize, MdOutlineCategory, MdOutlineInventory2 } from "react-icons/md";
 import { TbAlignBoxBottomCenter } from "react-icons/tb";
 import { FaUsers } from "react-icons/fa";
 import { IoFileTrayFullOutline } from "react-icons/io5";
 import Chart from './Chart';
-
 const Home=()=>{
     return (
         <>
@@ -43,7 +41,6 @@ const Home=()=>{
                         <h1>56</h1>
                    </div>
                 </div>
-    
                 <div className='charts'>
                     <Chart/>
                 </div>

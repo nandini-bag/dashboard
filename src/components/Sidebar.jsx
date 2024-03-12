@@ -1,21 +1,15 @@
 import React from 'react';
-// import { FaCaretRight } from "react-icons/fa6";
-// import { FaCaretLeft } from "react-icons/fa6";
 import SearchIcon from '@mui/icons-material/Search';
 import { MdClose, MdOutlineDashboardCustomize, MdNotificationsNone } from "react-icons/md";
+import { MdOutlineCategory } from "react-icons/md";
+import { HiMiniUserGroup } from "react-icons/hi2";
 import { LuFileBarChart2 } from "react-icons/lu";
 import { TbFileAnalytics } from "react-icons/tb";
 import { FiHeart } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
 import { BsToggle2On } from "react-icons/bs";
-// import { MdClose, MdOutlineSettings, MdOutlineDashboardCustomize, MdOutlineCategory, MdOutlineInventory2 } from "react-icons/md";
-// import { TbAlignBoxBottomCenter } from "react-icons/tb";
-// import { FaUsers } from "react-icons/fa";
-// import { IoFileTrayFullOutline, IoLogoDesignernews } from "react-icons/io5";
 import { IoLogoDesignernews } from "react-icons/io5";
-
-const Sidebar=({showMennu, toggleMenu})=>{
-    
+const Sidebar=({showMennu, toggleMenu})=>{    
     return (
         <>
             <aside id='sidebar' className={showMennu ? 'hide-show' : ''}>
@@ -24,9 +18,6 @@ const Sidebar=({showMennu, toggleMenu})=>{
                 <span className='logo-name'>Dashboard</span>
                 <MdClose className='close-icon' onClick={toggleMenu}/>
             </div>
-
-            {/* //Toggle-menu */}
-
             <div className='sidebar-content'>
                 <div className='search-box'>
                     <ul>
@@ -38,13 +29,24 @@ const Sidebar=({showMennu, toggleMenu})=>{
                         </li>
                     </ul>
                 </div>
-
                 <div className='menu-list'>
                     <ul>
                         <li>
                             <a href='#'>
                                 <MdOutlineDashboardCustomize className='icons'/>
                                 <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <MdOutlineCategory className='icons'/>
+                                <span>Category</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <HiMiniUserGroup className='icons'/>
+                                <span>Customers</span>
                             </a>
                         </li>
                         <li>
@@ -73,7 +75,6 @@ const Sidebar=({showMennu, toggleMenu})=>{
                         </li>
                     </ul>
                 </div>
-
                 <div className='bottom-content'>
                     <ul>
                         <li>
@@ -85,40 +86,12 @@ const Sidebar=({showMennu, toggleMenu})=>{
                         <li>
                             <a href='#' className='bottom-icons'>
                                <BsToggle2On className='icons open-icon'/>
-                            {/* <BsToggle2On className='icons open-icon' onClick={toggleTheme}/> */}
                                <span>Toggle</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-
-            </div>
-            
-            {/* <div className='side-div'>
-            <ul className='sidebar_list'>
-                <li className='sidebar_list_item'>
-                    <a href='#' target='_blank'><MdOutlineDashboardCustomize className='icon'/><span>dashboard</span></a>
-                </li>
-                <li className='sidebar_list_item'>
-                    <a href='#' target='_blank'><IoFileTrayFullOutline className='icon'/><span>product</span></a>
-                </li>
-                <li className='sidebar_list_item'>
-                    <a href='#' target='_blank'><MdOutlineCategory className='icon'/><span>categor</span></a>
-                </li>
-                <li className='sidebar_list_item'>
-                    <a href='#' target='_blank'><FaUsers className='icon'/><span>customers</span></a>
-                </li>
-                <li className='sidebar_list_item'>
-                    <a href='#' target='_blank'><MdOutlineInventory2 className='icon'/><span>inventory</span></a>
-                </li>
-                <li className='sidebar_list_item'>
-                    <a href='#' target='_blank'><TbAlignBoxBottomCenter className='icon'/><span>reports</span></a>
-                </li>
-                <li className='sidebar_list_item'>
-                    <a href='#' target='_blank'><MdOutlineSettings className='icon'/><span>settings</span></a>
-                </li>
-            </ul> 
-            </div>    */}           
+            </div>          
             </aside>
         </>
     );

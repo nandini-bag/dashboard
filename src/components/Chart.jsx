@@ -1,6 +1,5 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
-
 const Chart=()=>{
     const data = [
     {
@@ -25,7 +24,6 @@ const Chart=()=>{
             
             <div className='barChart'>
             <h1>bar chart</h1>
-            {/* <div style={{ width: '100%', height: 300 }}> */}
         <ResponsiveContainer>
           <AreaChart
             data={data}
@@ -44,8 +42,7 @@ const Chart=()=>{
           </AreaChart>
         </ResponsiveContainer>
             </div>
-            
-            
+                
             <div className='simpleBarChart'>
             <h1>simplebar chart</h1>
             {/* <div style={{ width: '100%', height: 300 }}> */}
@@ -68,7 +65,6 @@ const Chart=()=>{
           <Legend />
           <CartesianGrid strokeDasharray="3 3" />
           <Bar dataKey="price" fill="#63013d" background={{ fill: '#eee' }} />
-          {/* <Bar dataKey="price" fill="#8884d8" background={{ fill: '#eee' }} /> */}
         </BarChart>
             </ResponsiveContainer>
             </div>
