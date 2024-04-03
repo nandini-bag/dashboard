@@ -33,7 +33,7 @@ const Sidebar=({showMennu})=>{
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard'>
+                            <NavLink to='/category'>
                             <MdOutlineCategory className='icons'/>
                             <span>Category</span>
                             </NavLink>
