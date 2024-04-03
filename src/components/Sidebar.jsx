@@ -39,31 +39,31 @@ const Sidebar=({showMennu})=>{
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard'>
+                            <NavLink to='/Customers'>
                             <HiMiniUserGroup className='icons'/>
                             <span>Customers</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard'>
+                            <NavLink to='/Revenue'>
                             <LuFileBarChart2 className='icons'/>
                             <span>Revenue</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard'>
+                            <NavLink to='/Notification'>
                             <MdNotificationsNone className='icons'/>
                             <span>Notification</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard'>
+                            <NavLink to='/Analytics'>
                             <TbFileAnalytics className='icons'/>
                             <span>Analytics</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard'>
+                            <NavLink to='/likes'>
                             <FiHeart className='icons'/>
                             <span>likes</span>
                             </NavLink>
@@ -73,13 +73,13 @@ const Sidebar=({showMennu})=>{
                 <div className='bottom-content'>
                     <ul>
                         <li>
-                            <NavLink to='/dashboard'>
+                            <NavLink to='/login'>
                             <BiLogOut className='icons'/>
                             <span>login</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/dashboard'>
+                            <NavLink to='/Toggle'>
                             <BsToggle2On className='icons'/>
                             <span>Toggle</span>
                             </NavLink>
