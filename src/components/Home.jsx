@@ -4,10 +4,11 @@ import { TbAlignBoxBottomCenter } from "react-icons/tb";
 import { FaUsers } from "react-icons/fa";
 import { IoFileTrayFullOutline } from "react-icons/io5";
 import Chart from './Chart';
-const Home=()=>{
+
+const Home=({showMennu})=>{
     return (
         <>
-            <main className='main_container'>
+            <main className={`main_container ${showMennu ? 'collaps' : ''}`}>
                 <div className='main_title'>
                    <h3>dashboard</h3>
                 </div>

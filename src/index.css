@@ -32,7 +32,6 @@ a{
     text-transform: capitalize;
 }
 .container{
-    /* border: 2px solid red; */
     height: 100vh;
     display: grid;
     grid-template-columns: 20rem 1fr 1fr 1fr;
@@ -55,15 +54,15 @@ a{
 }
 /* =============== sidebar part start =============== */
 aside{
-    /* border: 2px solid #f3c9e5; */
     grid-area: sidebar;
     width:100%;
     transition: width;
+    position: relative;
 }
 /* =========== (sidebar Logo) ============ */
 .sidebar-logo{
   /* border: 2px solid #008000; */
-  background: var(--aside-color);
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,9 +83,11 @@ aside{
   font-size: 2rem;
   font-weight: 700;
   margin-left: 1rem;
+  text-transform: uppercase;
 }
 .toggle-icon:hover{
   color:red;
+  cursor: pointer;
 }
 .toggle-name{
   display: none;
@@ -100,8 +101,8 @@ aside{
   font-size: 2rem;
   color: #6b025d;
 }
-.close-icon{
-  color:rgb(247, 43, 7);
+/* .close-icon{
+  color:#000;
   position: absolute;
   top: .5rem;
   left: 17rem;
@@ -109,7 +110,7 @@ aside{
   font-size: 2rem;
   cursor: pointer;
   display: none;
-}
+} */
 /* =========== (Content Part) ============ */
 
 .sidebar-content{
@@ -118,15 +119,17 @@ aside{
     height: 88.5%;
   }
   .hide-show{
+    /* border: 2px solid #d9ff00; */
     display: block;
     position: absolute;
     width: 20rem;
+    top:6rem;
     z-index: 10;
   }
   /* =========== Search Part ============ */
   .search-box{
     /* border: 2px solid red; */
-    padding-top: 2.8rem;  
+    padding-top: 5.5rem;  
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(20px,1fr));
     align-items: center;
@@ -136,10 +139,10 @@ aside{
     border: none;
     outline: none;
     width: 12rem;
-    padding: 0px 10px 0px 15px;
+    padding: 0px 10px 0px 5px;
     font-size: 1.2rem;
     font-weight: 600;
-    background: #f2f5ed;
+    background: transparent;
     border-bottom: 1px solid gray;
     text-transform: capitalize;
     letter-spacing: .01rem;
@@ -200,6 +203,10 @@ main{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+/* // */
+.collaps{
+  margin-left: 20rem;
 }
 .main_title{
     /* border: 2px solid rgb(109, 221, 4); */
@@ -277,7 +284,7 @@ main{
 }
 /**    ====================== responsive code ==========================   **/
 /* 992px */
-@media screen and (max-width:992px){
+@media screen and (min-width:992px){
   .container{
     grid-template-columns: 1fr;
     grid-template-rows: .3fr 3fr;
